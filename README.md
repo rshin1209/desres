@@ -46,7 +46,7 @@ S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The sam
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
-# Protein Entropy Analysis Result
+# Protein Entropy Analysis
 ## Entropy Matrix
 ![A_imshow](https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c)
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
@@ -68,8 +68,10 @@ Traditional energy-based models and quantitative techniques like RMSD and RMSF f
 As shown in **Table 1**, **Figure 2** also shows significant entropy changes in M1Y, I7K, and R20K (A#B represents mutation from A to B at residue number #). Besides mutation sites, phenylalanine (F at residue 15) showed a significant change in correlations with other residues. This behavior was also shown in **Figure 3**, the comparison between peptides A and C, where mutation sites were K2Y, R19L, and R20K. On the other hand, the comparison between peptides B and C in **Figure 4** shows only the expected entropy change in the mutation sites Y1M, K2Y, K7I, and R19L. These could potentially suggest that lysine (residue 20), which is present in peptides B and C but not in peptide A, could restrict the conformational space of phenylalanine, which is the closest to the NiRAN domain. This could also potentially support the viral infection experiment results, where peptide A showed the highest average inhibition at 100 and 30 µM. This may be due to the fact that upon mutation of residue 20 from arginine to lysine, phenylalanine has lost its correlation with the NiRAN domain for inhibition and instead has resulted in an increase of correlation of its own peptide.
 
 As depicted in **Table 1**, **Figure 2** highlights notable entropy changes in M1Y, I7K, and R20K (A#B denotes mutation from A to B at residue number #). Beyond the mutation sites, phenylalanine (F at residue 15) exhibits a substantial alteration in correlations with other residues. This pattern is further evident in **Figure 3**, comparing peptides A and C, where mutation sites include K2Y, R19L, and R20K. Conversely, the comparison between peptides B and C in **Figure 4** reveals anticipated entropy changes solely at the mutation sites Y1M, K2Y, K7I, and R19L.
+
 ![123 copy](https://github.com/rshin1209/desres/assets/25111091/f2c17e74-4837-4001-a5ca-1049d748a91d)
 **Figure 5. PhenylAlanine (Resi 15) and Lysine (Resi 20) are presented in Peptides B and C.**
+
 These findings suggest a potential influence of lysine (residue 20), present in peptides B and C but not in peptide A, on restricting the conformational space of phenylalanine—closest to the NiRAN domain (**Figure 5**). This observation aligns with the results of viral infection experiments, where peptide A exhibited the highest average inhibition at 100 and 30 µM. It is conceivable that the mutation of residue 20 from arginine to lysine has led to a loss of correlation between phenylalanine and the NiRAN domain for inhibition, resulting instead in an increased correlation within its own peptide.
 
 # License
