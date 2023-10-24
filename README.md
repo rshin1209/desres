@@ -6,7 +6,7 @@ For any inquiries or further information, please contact Wook Shin via wook.shin
 The content within includes the analysis of protein entropy based on trajectories from molecular dynamics simulations conducted on Anton supercomputers by D. E. Shaw Research. The use of this [simulation data](https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) in **any published work** should be acknowledged by including a citation to: **D. E. Shaw Research, "Molecular Dynamics Simulations Related to SARS-CoV-2," D. E. Shaw Research Technical Data, 2020.**
 
 # DESRES-ANTON-[15235444, 15235449, 15235455, 15256595, 15256598, 15256602]
-The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SARS-CoV-2 NiRAN domain targeted peptides. D. E. Shaw Research utilized an in-house peptide-optimization workflow, which combines machine learning with free energy calculations, to predict β-hairpin peptides that would have high affinity for the N-terminal binding site on the nidovirus RdRp-associated nucleotidyltransferase (NiRAN) domain. Their workflow generated a series of amphiphilic peptides that contain both a hydrophobic surface, which in their computational model bound to the NiRAN domain, and a highly positively charged, arginine- and lysine-rich surface that faced away from the NiRAN domain.
+The dataset released by D. E. Shaw Research contains six 500-μs simulations of SARS-CoV-2 NiRAN domain targeted peptides. D. E. Shaw Research utilized an in-house peptide-optimization workflow, which combines machine learning with free energy calculations, to predict β-hairpin peptides that would have high affinity for the N-terminal binding site on the nidovirus RdRp-associated nucleotidyltransferase (NiRAN) domain. Their workflow generated a series of amphiphilic peptides that contain both a hydrophobic surface, which in their computational model bound to the NiRAN domain, and a highly positively charged, arginine- and lysine-rich surface that faced away from the NiRAN domain.
 ![Picture1](https://github.com/rshin1209/desres/assets/25111091/ee9d10e4-506a-4598-af60-1792365ea567)
 **Table 1. Amino acid sequences of the peptides are presented.** In the sequence alignment, black font indicates that the residue is present in the wild-type peptide and red indicates that the residue is not present in the wild-type peptide. "Peptide-X-dis" labels denote crosslinked peptides.
 
@@ -46,7 +46,9 @@ S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The sam
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
-
+# Protein Entropy Analysis Result
+![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
+**Table 2. Protein, residue, and backbone entropy comparison.** Here I presented protein, residue, and backbone entropy comparison. The values represent -TS. Hence, the lower the value, the higher the entropy. $${\color{blue}Blue}$$ represents the highest entropy and $${\color{red}Red}$$ represents the lowest entropy. Based on the comparison, Peptide C-dis showed the highest protein and summed residue entropy, while Peptide B showed the lowest protein and summed residue entropy. 
 
 # License
 This repository is licensed under the MIT License - see the LICENSE.md file for details.
