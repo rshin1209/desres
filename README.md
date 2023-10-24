@@ -10,7 +10,7 @@ The dataset released by D. E. Shaw Research contains six 500-μs simulations of 
 ![Picture1](https://github.com/rshin1209/desres/assets/25111091/ee9d10e4-506a-4598-af60-1792365ea567)
 **Table 1. Amino acid sequences of the peptides are presented.** In the sequence alignment, black font indicates that the residue is present in the wild-type peptide and red indicates that the residue is not present in the wild-type peptide. "Peptide-X-dis" labels denote crosslinked peptides.
 
-# Protein Entropy Analysis
+# Protein Entropy Calculation
 ## Python Module Requirements:
 * MDtraj
 * Networkx
@@ -46,13 +46,28 @@ S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The sam
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
-# Entropy Matrix
+# Protein Entropy Analysis Result
+## Entropy Matrix
 ![A_imshow](https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c)
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
-# Protein Entropy Analysis Result
+## Overall Entropy Comparison
 ![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
-**Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS, where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
+**Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
+
+## Assessment of Structural Dynamics Change by Mutation
+![A_B_imshow](https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f)
+**Figure 2. Entropy Matrix Comparison between Peptide A and Peptide B, derived from `./A/A_entropy_map.npy` and `./B/B_entropy_map.npy`, respectively.** 
+![A_C_imshow](https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39)
+**Figure 3. Entropy Matrix Comparison between Peptide A and Peptide C, derived from `./A/A_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
+![B_C_imshow](https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c)
+**Figure 4. Entropy Matrix Comparison between Peptide B and Peptide C, derived from `./B/B_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
+
+Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
+
+As shown in **Table 1**, **Figure 2** also shows significant entropy changes in M1Y, I7K, and R20K (A#B represents mutation from A to B at residue number #). Besides mutation sites, phenylalanine (F at residue 15) showed a significant change in correlations with other residues. This behavior was also shown in **Figure 3**, the comparison between peptides A and C, where mutation sites were K2Y, R19L, and R20K. On the other hand, the comparison between peptides B and C in **Figure 4** shows only the expected entropy change in the mutation sites Y1M, K2Y, K7I, and R19L. These could potentially suggest that lysine (residue 20), which is present in peptides B and C but not in peptide A, could restrict the conformational space of phenylalanine, which is the closest to the NiRAN domain. This could also potentially support the viral infection experiment results, where peptide A showed the highest average inhibition at 100 and 30 µM. This may be due to the fact that upon mutation of residue 20 from arginine to lysine, phenylalanine has lost its correlation with the NiRAN domain for inhibition and instead has resulted in an increase of correlation of its own peptide.
+
+
 
 # License
 This repository is licensed under the MIT License - see the LICENSE.md file for details.
