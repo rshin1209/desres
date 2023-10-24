@@ -55,7 +55,7 @@ entropy.log -- Protein entropy output containing 1D-entropies, mutual informatio
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
 
-## Entropy Comparison between Peptides A, B, and C, among Peptides A-dis, B-dis, and C-dis
+## Entropy Comparison among Peptides A, B, C, A-dis, B-dis, and C-dis
 <img src="https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc" width="600">
 
 **Table 3. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
