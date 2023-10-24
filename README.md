@@ -1,6 +1,6 @@
 # Disclaimer
-**This repository contains code and data related to ongoing, non-publishable research. The materials here are part of a work in progress and are not intended for publication or external use.**
-For any inquiries or further information, please contact Wook Shin via wook.shin@vanderbilt.edu
+**This repository contains code and data related to ongoing, non-publishable research. The materials here are part of a work in progress and are not intended for publication or external use.** <br>
+For any inquiries or further information, please contact Wook Shin via wook.shin@vanderbilt.edu <br>
 The content within includes the analysis of protein entropy based on trajectories from molecular dynamics simulations conducted on Anton supercomputers by D. E. Shaw Research. The use of this [simulation data](https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) in **any published work** should be acknowledged by including a citation to: **D. E. Shaw Research, "Molecular Dynamics Simulations Related to SARS-CoV-2," D. E. Shaw Research Technical Data, 2020.**
 
 # DESRES-ANTON-[15235444, 15235449, 15235455, 15256595, 15256598, 15256602]
@@ -16,9 +16,9 @@ The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SA
 * json
 * multiprocessing
 ## Reproduction
-Protein Entropy Analysis was performed on six (peptide-only) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb.\\
-The main Python script `protein_entropy.py` is used for implementing protein entropy analysis.\\
-Taking the (1) for an example, one can simply run the following two commands to perform protein entropy analysis.\\
+Protein Entropy Analysis was performed on six (peptide-only) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb.<br>
+The main Python script `protein_entropy.py` is used for implementing protein entropy analysis.<br>
+Taking the (1) for an example, one can simply run the following two commands to perform protein entropy analysis.<br>
 `python protein_entropy.py --reaction A --temperature 298.15 --job 0`
 'python protein_entropy.py --reaction A --temperature 298.15 --job 1'
 `[reaction] -- Name of pdb file containing simulation trajectory frames`
