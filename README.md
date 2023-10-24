@@ -68,9 +68,9 @@ In accordance with **Table 3**, peptides A-dis, B-dis, and C-dis exhibited the h
 
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** The entropy matrix serves as a tool for visualizing residue entropies and correlations among pairs of residues, enabling a quantitative assessment of their changes upon mutation. Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
-## Assessment of Structural Dynamics Change by Mutation
-
 Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
+
+## Assessment of Structural Dynamics Change by Mutation
 
 ### Peptide A, B, and C
 
