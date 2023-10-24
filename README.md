@@ -7,11 +7,16 @@ For any inquiries or further information, please contact [Wook Shin](https://lab
 The content within includes the analysis of protein entropy based on trajectories from molecular dynamics simulations conducted on Anton supercomputers by D. E. Shaw Research. The use of this [simulation data](https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) in **any published work** should be acknowledged by including a citation to: **D. E. Shaw Research, "Molecular Dynamics Simulations Related to SARS-CoV-2," D. E. Shaw Research Technical Data, 2020.**
 
 ## DESRES-ANTON-[15235444, 15235449, 15235455, 15256595, 15256598, 15256602]
-The dataset released by D. E. Shaw Research contains six 500-μs simulations of SARS-CoV-2 NiRAN domain targeted peptides. D. E. Shaw Research utilized an in-house peptide-optimization workflow, which combines machine learning with free energy calculations, to predict β-hairpin peptides that would have high affinity for the N-terminal binding site on the nidovirus RdRp-associated nucleotidyltransferase (NiRAN) domain. Their workflow generated a series of amphiphilic peptides that contain both a hydrophobic surface, which in their computational model bound to the NiRAN domain, and a highly positively charged, arginine- and lysine-rich surface that faced away from the NiRAN domain.
+The dataset released by D. E. Shaw Research contains six 500-μs simulations of SARS-CoV-2 NiRAN domain targeted peptides. D. E. Shaw Research.
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/ee9d10e4-506a-4598-af60-1792365ea567" width="600">
 
 **Table 1. Amino acid sequences of the peptides are presented.** In the sequence alignment, black font indicates that the residue is present in the wild-type peptide and red indicates that the residue is not present in the wild-type peptide. "Peptide-X-dis" labels denote crosslinked peptides.
+
+<img src="https://github.com/rshin1209/protein_entropy_analysis_DESRES/assets/25111091/15e7debf-9129-41cb-afbf-f55aface0032"  width="600">
+
+**Table 2. Cellular antiviral activity and cytotoxicity.** Inhibition and viability at 100 and 30 µM for peptides A, B, C, and their crosslinked forms. (These assays were performed at the Institut Pasteur Korea.)
+
 * D. E. Shaw Research, "Molecular Dynamics Simulations Related to SARS-CoV-2," D. E. Shaw Research Technical Data, 2020.
 ## Protein Entropy Calculation
 ### Python Module Requirements:
@@ -53,7 +58,7 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ## Entropy Comparison between Peptides A, B, and C, among Peptides A-dis, B-dis, and C-dis
 <img src="https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc" width="600">
 
-**Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
+**Table 3. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
 
 In accordance with **Table 2**, peptides A-dis, B-dis, and C-dis exhibited the highest entropies among the six peptide variations. While this outcome aligns with the higher average inhibition observed in the crosslinked peptides, it lacks a quantitative or qualitative correlation with average inhibition and average viability. This underscores the crucial need for meticulous examination of protein dynamics at the residue level. I posit that adopting such an approach could mark a significant advancement toward a more comprehensive understanding of molecular interactions. This, in turn, addresses a critical challenge in drug design by acknowledging and integrating entropy into therapeutic modeling frameworks. Such an integration has the potential to reshape the landscape of drug development, enabling more targeted and effective therapeutic interventions.
 
