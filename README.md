@@ -48,7 +48,7 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ```
 # Entropy Matrix
 ![A_imshow](https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c)
-**Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements represent individual residue entropy in -TS (kcal/mol). The lower the value, the higher the entropy. Off-diagonal elements represent the correlation of residue pairs. The higher the value, the higher the correlation.
+**Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
 # Protein Entropy Analysis Result
 ![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
