@@ -42,7 +42,7 @@ After running the two commands above, you will have 5 output files in the follow
 ```
 topology.txt -- Atom indices of bonds, angles, and torsion angles in the target molecule
 topology.pdb -- The first frame of the simulation trajectory file
-S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The same order presented in topology.txt
+S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The same order presented in topology.txt)
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
