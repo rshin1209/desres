@@ -70,6 +70,8 @@ In accordance with **Table 3**, peptides A-dis, B-dis, and C-dis exhibited the h
 
 ## Assessment of Structural Dynamics Change by Mutation
 
+Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
+
 ### Peptide A, B, and C
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f" width="600">
@@ -83,8 +85,6 @@ In accordance with **Table 3**, peptides A-dis, B-dis, and C-dis exhibited the h
 <img src="https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c" width="600">
 
 **Figure 4. Entropy Matrix Comparison between Peptide B and Peptide C, derived from `./B/B_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
-
-Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
 
 **Figure 2** highlights notable entropy changes in M1Y, I7K, and R20K (A#B denotes mutation from A to B at residue number #). Beyond the mutation sites, phenylalanine (F at residue 15) exhibits a substantial alteration in correlations with other residues. This pattern is further evident in **Figure 3**, comparing peptides A and C, where mutation sites include K2Y, R19L, and R20K. Conversely, the comparison between peptides B and C in **Figure 4** reveals anticipated entropy changes solely at the mutation sites Y1M, K2Y, K7I, and R19L.
 
