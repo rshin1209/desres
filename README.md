@@ -50,16 +50,24 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ```
 # Protein Entropy Analysis
 ## Entropy Matrix
+
 <img src="https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c" width="600">
+
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
 ## Assessment of Structural Dynamics Change by Mutation
 ### Peptide A, B, and C
-![A_B_imshow](https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f)
+
+<img src="https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f width="600">
+
 **Figure 2. Entropy Matrix Comparison between Peptide A and Peptide B, derived from `./A/A_entropy_map.npy` and `./B/B_entropy_map.npy`, respectively.** 
-![A_C_imshow](https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39)
+
+<img src="https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39 width="600">
+
 **Figure 3. Entropy Matrix Comparison between Peptide A and Peptide C, derived from `./A/A_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
-![B_C_imshow](https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c)
+
+<img src="https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c width="600">
+
 **Figure 4. Entropy Matrix Comparison between Peptide B and Peptide C, derived from `./B/B_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
 
 Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
