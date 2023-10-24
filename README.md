@@ -48,7 +48,7 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ```
 # Protein Entropy Analysis Result
 ![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
-**Table 2. Protein, residue, and backbone entropy comparison.** Here I presented protein, residue, and backbone entropy comparison. The values represent -TS. Hence, the lower the value, the higher the entropy. $${\color{blue}Blue}$$ represents the highest entropy and $${\color{red}Red}$$ represents the lowest entropy. Based on the comparison, Peptide C-dis showed the highest protein and summed residue entropy, while Peptide B showed the lowest protein and summed residue entropy. 
+**Table 2. Protein, residue, and backbone entropy comparison.** Here I presented protein, residue, and backbone entropy comparison. The values represent -TS. Hence, the lower the value, the higher the entropy. ${\color{blue}Blue}$ represents the highest entropy and ${\color{red}Red}$ represents the lowest entropy. Based on the comparison, Peptide C-dis showed the highest protein and summed residue entropy, while Peptide B showed the lowest protein and summed residue entropy. 
 
 # License
 This repository is licensed under the MIT License - see the LICENSE.md file for details.
