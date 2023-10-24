@@ -9,3 +9,6 @@ The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SA
 **Table 1. Amino acid sequences of the peptides are presented.** In the sequence alignment, black font indicates that the residue is present in the wild-type peptide and red indicates that the residue is not present in the wild-type peptide. "Peptide-X-dis" labels denote crosslinked peptides.
 
 # Protein Entropy Analysis
+
+
+![A_dis_imshow](https://github.com/rshin1209/desres/assets/25111091/8291d79a-d788-486d-85a0-5218dcb194d3)
