@@ -51,11 +51,8 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ![A_imshow](https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c)
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
-## Overall Entropy Comparison
-![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
-**Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
-
 ## Assessment of Structural Dynamics Change by Mutation
+### Peptide A, B, and C
 ![A_B_imshow](https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f)
 **Figure 2. Entropy Matrix Comparison between Peptide A and Peptide B, derived from `./A/A_entropy_map.npy` and `./B/B_entropy_map.npy`, respectively.** 
 ![A_C_imshow](https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39)
@@ -65,12 +62,30 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 
 Traditional energy-based models and quantitative techniques like RMSD and RMSF frequently present limitations in providing a thorough evaluation of structural dynamics alterations induced by mutations. By employing the entropy matrix that I have developed, a more comprehensive assessment of the impact of mutations on structural dynamics can be achieved.
 
-As depicted in **Table 1**, **Figure 2** highlights notable entropy changes in M1Y, I7K, and R20K (A#B denotes mutation from A to B at residue number #). Beyond the mutation sites, phenylalanine (F at residue 15) exhibits a substantial alteration in correlations with other residues. This pattern is further evident in **Figure 3**, comparing peptides A and C, where mutation sites include K2Y, R19L, and R20K. Conversely, the comparison between peptides B and C in **Figure 4** reveals anticipated entropy changes solely at the mutation sites Y1M, K2Y, K7I, and R19L.
+**Figure 2** highlights notable entropy changes in M1Y, I7K, and R20K (A#B denotes mutation from A to B at residue number #). Beyond the mutation sites, phenylalanine (F at residue 15) exhibits a substantial alteration in correlations with other residues. This pattern is further evident in **Figure 3**, comparing peptides A and C, where mutation sites include K2Y, R19L, and R20K. Conversely, the comparison between peptides B and C in **Figure 4** reveals anticipated entropy changes solely at the mutation sites Y1M, K2Y, K7I, and R19L.
 
 ![123 copy](https://github.com/rshin1209/desres/assets/25111091/f2c17e74-4837-4001-a5ca-1049d748a91d)
 **Figure 5. PhenylAlanine (Resi 15) and Lysine (Resi 20) are presented in Peptides B and C.**
 
-These findings suggest a potential influence of lysine (residue 20), present in peptides B and C but not in peptide A, on restricting the conformational space of phenylalanine—closest to the NiRAN domain (**Figure 5**). This observation aligns with the results of viral infection experiments, where peptide A exhibited the highest average inhibition at 100 and 30 µM. It is conceivable that the mutation of residue 20 from arginine to lysine has led to a loss of correlation between phenylalanine and the NiRAN domain for inhibition, resulting instead in an increased correlation within its own peptide.
+These findings suggest a potential influence of lysine (residue 20), present in peptides B and C but not in peptide A, on restricting the conformational space of phenylalanine—closest to the NiRAN domain (**Figure 5**). This observation aligns with the results of viral infection experiments, where peptide A exhibited the highest average inhibition at 100 µM. It is conceivable that the mutation of residue 20 from arginine to lysine has led to a loss of correlation between phenylalanine and the NiRAN domain for inhibition, resulting instead in an increased correlation within its own peptide.
+
+### Peptide A-dis, B-dis, and C-dis
+![A_dis_B_dis_imshow](https://github.com/rshin1209/desres/assets/25111091/1e33eac6-d814-4906-8ac6-75218f810bdc)
+**Figure 6. Entropy Matrix Comparison between Peptide A-dis and Peptide B-dis, derived from `./A_dis/A_dis_entropy_map.npy` and `./B/B_entropy_map.npy`, respectively.** 
+![A_dis_C_dis_imshow](https://github.com/rshin1209/desres/assets/25111091/d0ff2bce-61e0-4492-9a8a-eb9992315a5b)
+**Figure 7. Entropy Matrix Comparison between Peptide A-dis and Peptide C-dis, derived from `./A_dis/A_dis_entropy_map.npy` and `./C_dis/C_dis_entropy_map.npy`, respectively.** 
+![B_dis_C_dis_imshow](https://github.com/rshin1209/desres/assets/25111091/b9468a30-9202-4566-a2c0-cb6d626f6656)
+**Figure 8. Entropy Matrix Comparison between Peptide B-dis and Peptide C-dis, derived from `./B_dis/B_dis_entropy_map.npy` and `./C_dis/C_dis_entropy_map.npy`, respectively.** 
+
+Besides a notable entropy change in I7K, **Figure 6** highlights a substantial decrease in correlation change of phenylalanine (residue 15) from peptide A-dis to B-dis. Although **Figure 7** also shows a decrease in correlation change of phenylalanine from peptide A-dis to C-dis, its change is less than the previous change. This aligns with our previous potential conclusion that phenylalanine in peptide B showed the lowest correlation with other residues within the peptide and this could potentially align with the highest average inhibition at 100 µM among peptides A-dis, B-dis, and C-dis.
+
+In both **Figure 7** and **Figure 8**, there are significant changes in residue entropy and correlation of R19L. Based on the comparisons, peptide C-dis showed the lowest correlation between lysine (residue 19) and other residues. Based on **Figure 7**, peptide A-dis showed the highest correlation difference of 7.7 kcal/mol in residue 19. Based on **Figure 8**, peptide B-dis showed the highest correlation difference of 6.1 kcal/mol in residue 19. These substantial differences in correlations in residue 19 suggest a potential conclusion that Lysine plays a significant role in toleration among peptides A-dis, B-dis, and C-dis, and could potentially support the highest average viability of peptide C-dis. 
+
+## Entropy Comparison between Peptides A, B, and C, and Peptides A-dis, B-dis, and C-dis
+![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
+**Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
+
+
 
 # License
 This repository is licensed under the MIT License - see the LICENSE.md file for details.
