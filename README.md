@@ -98,7 +98,7 @@ Apart from a notable entropy change in I7K, **Figure 6** underscores a significa
 
 Both **Figure 7** and **Figure 8** show substantial alterations in residue entropy and correlation for R19L. According to the comparisons, peptide C-dis displays the least correlation between lysine (residue 19) and other residues. In **Figure 7**, peptide A-dis exhibits the highest correlation difference of 7.7 kcal/mol in residue 19. Meanwhile, in Figure 8, peptide B-dis shows the greatest correlation difference of 6.1 kcal/mol in residue 19. These significant variations in correlations at residue 19 suggest a potential inference that lysine plays a significant role in tolerance among peptides A-dis, B-dis, and C-dis, potentially contributing to the highest average viability of peptide C-dis.
 
-## Entropy Comparison between Peptides A, B, and C, and Peptides A-dis, B-dis, and C-dis
+## Entropy Comparison between Peptides A, B, and C, among Peptides A-dis, B-dis, and C-dis
 <img src="https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc" width="600">
 
 **Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
