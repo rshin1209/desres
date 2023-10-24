@@ -1,6 +1,8 @@
 # Disclaimer
 **This repository contains code and data related to ongoing, non-publishable research. The materials here are part of a work in progress and are not intended for publication or external use.** <br>
+
 For any inquiries or further information, please contact Wook Shin via wook.shin@vanderbilt.edu <br>
+
 The content within includes the analysis of protein entropy based on trajectories from molecular dynamics simulations conducted on Anton supercomputers by D. E. Shaw Research. The use of this [simulation data](https://www.deshawresearch.com/downloads/download_trajectory_sarscov2.cgi/) in **any published work** should be acknowledged by including a citation to: **D. E. Shaw Research, "Molecular Dynamics Simulations Related to SARS-CoV-2," D. E. Shaw Research Technical Data, 2020.**
 
 # DESRES-ANTON-[15235444, 15235449, 15235455, 15256595, 15256598, 15256602]
@@ -28,5 +30,14 @@ python protein_entropy.py --reaction A --temperature 298.15 --job 1
 [reaction] -- Name of pdb file containing simulation trajectory frames
 [temperature] -- Temperature (Kelvin) for -TS calculation
 [job] -- 0 for degrees of freedom extraction from Cartesian coordinates and 1 for configurational entropy calculation
+```
+
+After running the two commands above, you will have 5 output files in the following directory: `./A/`. 
+```
+topology.txt -- Atom indices of bonds, angles, and torsion angles in the target molecule
+topology.pdb -- The first frame of the simulation trajectory file
+S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The same order presented in topology.txt
+entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
+A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
 
