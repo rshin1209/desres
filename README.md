@@ -9,6 +9,23 @@ The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SA
 **Table 1. Amino acid sequences of the peptides are presented.** In the sequence alignment, black font indicates that the residue is present in the wild-type peptide and red indicates that the residue is not present in the wild-type peptide. "Peptide-X-dis" labels denote crosslinked peptides.
 
 # Protein Entropy Analysis
+## Python Module Requirements:
+* MDtraj
+* Networkx
+* Numpy
+* json
+* multiprocessing
+## Reproduction
+Protein Entropy Analysis was performed on six (peptide-only) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb. 
+The main Python script `protein_entropy.py` is used for implementing protein entropy analysis.
+Taking the (1) for an example, one can simply run the following two commands to perform protein entropy analysis.
+`python protein_entropy.py --reaction A --temperature 298.15 --job 0`
+'python protein_entropy.py --reaction A --temperature 298.15 --job 1'
+`[reaction] -- Name of pdb file containing simulation trajectory frames`
+`[temperature] -- Temperature (Kelvin) for -TS calculation`
+`[job] -- 0 for degrees of freedom extraction from Cartesian coordinates and 1 for configurational entropy calculation`
 
+
+Configurational entropy calculation of a protein begins with extracting Internal Coordinates from Cartesian Coordinates of every frame that exists in simulation trajectories. 
 
 ![A_dis_imshow](https://github.com/rshin1209/desres/assets/25111091/8291d79a-d788-486d-85a0-5218dcb194d3)
