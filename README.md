@@ -18,10 +18,10 @@ The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SA
 * json
 * multiprocessing
 ## Computational Resource
-*CPU: Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
-*Nodes: 1
-*Job Wall-clock: 01:49:51
-*Memory Usage: 9.29 GB
+* CPU: Intel(R) Xeon(R) CPU E5-2420 0 @ 1.90GHz
+* Nodes: 1
+* Job Wall-clock: 01:49:51
+* Memory Usage: 9.29 GB
 
 ## Reproduction
 Protein Entropy Analysis was performed on six (**peptide-only**) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb.<br />
@@ -47,3 +47,6 @@ entropy.log -- Protein entropy output containing 1D-entropies, mutual informatio
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
 
+
+# License
+This repository is licensed under the MIT License - see the LICENSE.md file for details.
