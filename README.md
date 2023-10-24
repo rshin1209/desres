@@ -49,24 +49,23 @@ S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The sam
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
-## Protein Entropy Analysis
 
-### Entropy Comparison between Peptides A, B, and C, among Peptides A-dis, B-dis, and C-dis
+## Entropy Comparison between Peptides A, B, and C, among Peptides A-dis, B-dis, and C-dis
 <img src="https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc" width="600">
 
 **Table 2. Protein, residue, and backbone entropy comparison.** In this presentation, I conducted a comparison of protein, residue, and backbone entropy. The values are expressed as -TS (kcal/mol), where lower values correspond to higher entropy. The color ${\color{blue}blue}$ indicates the highest entropy, while ${\color{red}red}$ signifies the lowest entropy. According to the comparison, Peptide C-dis exhibited the highest protein and summed residue entropy, whereas Peptide B demonstrated the lowest protein and summed residue entropy.
 
 In accordance with **Table 2**, peptides A-dis, B-dis, and C-dis exhibited the highest entropies among the six peptide variations. While this outcome aligns with the higher average inhibition observed in the crosslinked peptides, it lacks a quantitative or qualitative correlation with average inhibition and average viability. This underscores the crucial need for meticulous examination of protein dynamics at the residue level. I posit that adopting such an approach could mark a significant advancement toward a more comprehensive understanding of molecular interactions. This, in turn, addresses a critical challenge in drug design by acknowledging and integrating entropy into therapeutic modeling frameworks. Such an integration has the potential to reshape the landscape of drug development, enabling more targeted and effective therapeutic interventions.
 
-### What is Entropy Matrix?
+## What is Entropy Matrix?
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c" width="600">
 
 **Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** The entropy matrix serves as a tool for visualizing residue entropies and correlations among pairs of residues, enabling a quantitative assessment of their changes upon mutation. Diagonal elements in the matrix signify the entropy of individual residues in -TS (kcal/mol). A lower value indicates higher entropy for the respective residue. On the other hand, off-diagonal elements denote the correlation between pairs of residues. A higher value suggests a stronger correlation between the paired residues.
 
-### Assessment of Structural Dynamics Change by Mutation
+## Assessment of Structural Dynamics Change by Mutation
 
-#### Peptide A, B, and C
+### Peptide A, B, and C
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f" width="600">
 
@@ -90,7 +89,7 @@ Traditional energy-based models and quantitative techniques like RMSD and RMSF f
 
 These findings suggest a potential influence of lysine (residue 20), present in peptides B and C but not in peptide A, on restricting the conformational space of phenylalanine—closest to the NiRAN domain (**Figure 5**). This observation aligns with the results of viral infection experiments, where peptide A exhibited the highest average inhibition at 100 µM. It is conceivable that the mutation of residue 20 from arginine to lysine has led to a loss of correlation between phenylalanine and the NiRAN domain for inhibition, resulting instead in an increased correlation within its own peptide.
 
-#### Peptide A-dis, B-dis, and C-dis
+### Peptide A-dis, B-dis, and C-dis
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/1e33eac6-d814-4906-8ac6-75218f810bdc" width="600">
 
