@@ -46,9 +46,15 @@ S1D.npy -- Numpy array of 1D-entropies of individual degrees of freedom (The sam
 entropy.log -- Protein entropy output containing 1D-entropies, mutual information among DoF pairs, MIE entropy, MIST entropy
 A_entropy_map.npy -- Entropy matrix containing individual residue entropy and correlation among residue pairs 
 ```
+# Entropy Matrix
+![A_imshow](https://github.com/rshin1209/desres/assets/25111091/f2c8b976-65a9-464f-9684-58c6ef59e47c)
+**Figure 1. Entropy Matrix of Peptide A derived from `./A/A_entropy_map.npy`.** Diagonal elements represent individual residue entropy in -TS (kcal/mol). The lower the value, the higher the entropy. Off-diagonal elements represent the correlation of residue pairs. The higher the value, the higher the correlation.
+
 # Protein Entropy Analysis Result
 ![Picture4](https://github.com/rshin1209/desres/assets/25111091/4a99bca9-7f70-45c6-8117-79b5667459fc)
-**Table 2. Protein, residue, and backbone entropy comparison.** Here I presented protein, residue, and backbone entropy comparison. The values represent -TS. Hence, the lower the value, the higher the entropy. ${\color{blue}Blue}$ represents the highest entropy and ${\color{red}Red}$ represents the lowest entropy. Based on the comparison, Peptide C-dis showed the highest protein and summed residue entropy, while Peptide B showed the lowest protein and summed residue entropy. 
+**Table 2. Protein, residue, and backbone entropy comparison.** Here I presented protein, residue, and backbone entropy comparison. The values represent -TS. Hence, the lower the value, the higher the entropy. ${\color{blue}Blue}$ represents the highest entropy and ${\color{red}Red}$ represents the lowest entropy. Based on the comparison, Peptide C-dis showed the highest protein and summed residue entropy, while Peptide B showed the lowest protein and summed residue entropy.
+
+
 
 # License
 This repository is licensed under the MIT License - see the LICENSE.md file for details.
