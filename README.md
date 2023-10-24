@@ -76,7 +76,7 @@ Traditional energy-based models and quantitative techniques like RMSD and RMSF f
 
 <img src="https://github.com/rshin1209/desres/assets/25111091/f2c17e74-4837-4001-a5ca-1049d748a91d" width="600">
 
-**Figure 5. PhenylAlanine (Resi 15) and Lysine (Resi 20) are presented in Peptides B and C.**
+**Figure 5. PhenylAlanine (Resi 15) and Lysine (Resi 20) are presented in Peptide C.**
 
 These findings suggest a potential influence of lysine (residue 20), present in peptides B and C but not in peptide A, on restricting the conformational space of phenylalanine—closest to the NiRAN domain (**Figure 5**). This observation aligns with the results of viral infection experiments, where peptide A exhibited the highest average inhibition at 100 µM. It is conceivable that the mutation of residue 20 from arginine to lysine has led to a loss of correlation between phenylalanine and the NiRAN domain for inhibition, resulting instead in an increased correlation within its own peptide.
 
