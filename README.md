@@ -58,15 +58,15 @@ A_entropy_map.npy -- Entropy matrix containing individual residue entropy and co
 ## Assessment of Structural Dynamics Change by Mutation
 ### Peptide A, B, and C
 
-<img src="https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f width="600">
+<img src="https://github.com/rshin1209/desres/assets/25111091/0ac2a61f-db68-4319-9ab5-ae890d4b4b2f" width="600">
 
 **Figure 2. Entropy Matrix Comparison between Peptide A and Peptide B, derived from `./A/A_entropy_map.npy` and `./B/B_entropy_map.npy`, respectively.** 
 
-<img src="https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39 width="600">
+<img src="https://github.com/rshin1209/desres/assets/25111091/d80e28fb-7da3-4449-8cf8-4f24d2ed8c39" width="600">
 
 **Figure 3. Entropy Matrix Comparison between Peptide A and Peptide C, derived from `./A/A_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
 
-<img src="https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c width="600">
+<img src="https://github.com/rshin1209/desres/assets/25111091/b088f388-d8fc-4d81-97e9-03626060e37c" width="600">
 
 **Figure 4. Entropy Matrix Comparison between Peptide B and Peptide C, derived from `./B/B_entropy_map.npy` and `./C/C_entropy_map.npy`, respectively.** 
 
