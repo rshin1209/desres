@@ -16,7 +16,7 @@ The dataset released by D. E. Shaw Research contains 6 500-μs simulations of SA
 * json
 * multiprocessing
 ## Reproduction
-Protein Entropy Analysis was performed on six (peptide-only) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb.<br \>
+Protein Entropy Analysis was performed on six (peptide-only) NiRAN domain-targeted peptides. (1) A.pdb. (2) B.pdb. (3) C.pdb. (4) A_dis.pdb. (5) B_dis.pdb. (6) C_dis.pdb.<br />
 The main Python script `protein_entropy.py` is used for implementing protein entropy analysis.<br>
 Taking the (1) for an example, one can simply run the following two commands to perform protein entropy analysis.<br>
 `python protein_entropy.py --reaction A --temperature 298.15 --job 0`
