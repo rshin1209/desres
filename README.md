@@ -1,6 +1,6 @@
 # Protein Entropy Analysis
 ## Research Disclaimer: Code and Data for Ongoing Research
-**This repository contains code and data related to ongoing, non-publishable research. The materials here are part of a work in progress and are not intended for publication or external use.**
+**This repository contains code and data related to ongoing, non-publishable research. The materials here are part of self-study and are not intended for publication or external use.**
 
 For any inquiries or further information, please contact [Wook Shin](https://lab.vanderbilt.edu/zyang-lab/person/wook-shin/) via wook.shin@vanderbilt.edu.
 
